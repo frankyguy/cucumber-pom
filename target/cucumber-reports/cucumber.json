@@ -1,0 +1,112 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5864261500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.startUp()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "Login with correct username and password",
+        "description": "",
+        "id": "login;login-with-correct-username-and-password;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 965612300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 9260949100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am on gumtree home page",
+            "match": {
+              "location": "loginSteps.iAmOnGumtreeHomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1485145000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I click SignIn link",
+            "match": {
+              "location": "loginSteps.iClickSignInLink()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 420124400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I sign in with francisemmanuel786@gmail.com and Test@12345",
+            "match": {
+              "arguments": [
+                {
+                  "val": "francisemmanuel786@gmail.com",
+                  "offset": 15
+                },
+                {
+                  "val": "Test@12345",
+                  "offset": 48
+                }
+              ],
+              "location": "loginSteps.iEnterUsernameAndPassword(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6863697400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I should see the home page with user as \"Francis\" logged in",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Francis",
+                  "offset": 41
+                }
+              ],
+              "location": "loginSteps.iShouldSeeTheHomePageWithUserAsLoggedIn(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Login",
+    "description": "Login to gumtree website",
+    "id": "login",
+    "keyword": "Feature",
+    "uri": "loginTest.feature"
+  }
+]

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="24.85979">
+<testcase classname="Login" name="Login with correct username and password" time="24.85979">
+<system-out><![CDATA[Given I am on gumtree home page.............................................passed
+And I click SignIn link.....................................................passed
+And I sign in with francisemmanuel786@gmail.com and Test@12345..............passed
+Then I should see the home page with user as "Francis" logged in............passed
+]]></system-out>
+</testcase>
+</testsuite>
